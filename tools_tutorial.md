@@ -5,14 +5,14 @@ and an introduction for how to use each for this tutorial.
 
 Install Python using the standalone installer from the latest official download page https://www.python.org/downloads/
 
-![An image showing which Python installer to get](tools-python-installer.png)
+![An image showing which Python installer to get](Images/tools-python-installer.png)
 
 Make sure that python gets added to the PATH
 
-![Check the box for PATH in the installer popup](tools-python-installer-path.png)
+![Check the box for PATH in the installer popup](Images/tools-python-installer-path.png)
 
 Run this command in a command prompt to ensure proper installation: python --version \
-[Never used a command prompt before? Jump here!](#command-prompt)
+[Never used a command prompt before? Jump here!](#command-prompt) \
 On some systems, you might need to use 'py' or 'python3' instead of python. From now on in this tutorial, I will always use the 'python' command, remember to adjust if you need to use 'py' or 'python3' as your command.
 
 To run the Python interpreter, run this command in a command prompt: python \
@@ -28,7 +28,7 @@ You can download the VSCode installer from the official download page https://co
 
 After installing it, we will want to get some extensions that make Python easier to code and debug. Open VSCode and find and click on the icon labeled Extensions on the left side. Type 'python' in the search bar that appears and install the extension by microsoft. 
 
-![Screenshot of the Python extension in VSCode](tools-vscode-python-ext.png)
+![Screenshot of the Python extension in VSCode](Images/tools-vscode-python-ext.png)
 
 To open code in a file or folder, use the File button at the top of the window. Then on the sidebar, select Explorer if it is not already selected.
 
@@ -39,17 +39,20 @@ To run a single line or single block of code use [shift + enter] while your curs
 ## Git
 
 Install git from the latest official download page https://git-scm.com/install/windows \
+Install the GitHub CLI from the latest official download page https://cli.github.com/ \
 Optionally, install tortoise git https://tortoisegit.org/download/ \
-    Note that this tutorial does not cover tortoise git usage, but it may be more intuitive \
+    Note that this tutorial does not cover tortoise git usage, but it may be more intuitive to use \
 Check it was installed correctly on a command line: git --version
 
 Create a GitHub account https://github.com/
 
-We're going to run a series of commands to set up git
+We're going to run a series of commands to set up Git with GitHub
 
 This command will authenticate your access to GitHub on your current device. \
 Command> gh auth login \
 Enter your GitHub credentials 
+
+![Screenshot of the GitHub CLI setup](Images/tools-githubcli.png)
 
 This command will help you configure git. \
 I recommend using the same user name as your GitHub. \
@@ -66,7 +69,7 @@ Command> git clone https://github.com/Skyzeala/Python-Tutorial.git
 
 Now you have all of the code in this repository.
 
-If you need to get updates from the repository, use this command. \
+If you need to update your copy of the code repository, use this command. \
 Command> git pull \
 Note that this will not work if you have made any changes to the code in the repository.
 
