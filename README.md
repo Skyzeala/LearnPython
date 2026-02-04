@@ -11,7 +11,7 @@ If you need help getting started, check out the [tools_tutorial.md](tools_tutori
 - - 1.3_BasicMath.py - An introduction to numbers and math
 - - 1.4_BoolsAndConditionals.py - An introduction to bool types, if statements, and match statements
 
-The rest are in progress
+The rest are incomplete, but can still be browsed as more content is added regularly.
 
 # Resources
 https://docs.python.org/3/tutorial/index.html - A Python tutorial
