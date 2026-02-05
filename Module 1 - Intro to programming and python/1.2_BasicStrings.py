@@ -1,18 +1,30 @@
 # Here are some things we can do with strings
 # We use a lot of print statements here to show the outputs, 
-# but the print statements themselves are not the focus of this file
+#     but the print statements themselves are not the focus of this file
 
 # Strings are how we can store text in Python
-# Strings are things like single letters ("a"), words ("Hello"), and sentences too ("Hello world!")
+# Strings are things like single letters ("a"), words ("Hello"), and sentences too ("Hello, World!")
 
-# Here we combine two strings, note that single quotes and double quotes both work to define a string.
-print('This is a string, and ' + "this is also a string.") #concatenate 2 strings using + operator
-print("Concatenation is implicit" " for string literals") #concatenate 2 strings implicitly
-print() #prints an empty line, helps to keep things formatted
+# Strings can be defined using single quotes or double quotes, these are then called string literals
+print('This is a string')
+print("This is also a string")
+print() #prints an empty new line, this helps to keep the output formatted and easier to read
 
-print("Here we combine data types by converting an integer to a string: " + str(5))
-# The concatenation operator (+ for strings) can only handle similar data types, we convert using str()
-print("You can however, multiply " + "strings" * 3)
+# We can combine two strings with concatenation, one string after the other 
+print('This is a string, and ' + "this is also a string.") #concatenate 2 strings explicitly with +
+print("Concatenation is implicit " "for string literals") #concatenate 2 strings implicitly, no plus needed
+# In general you will likely want to use the form with the +, as most strings will be stored in variables
+#     rather than hardcoded as string literals
+print("you can concatenate " + "as many " + "strings " + "together " + "as you'd like"
+      + ", and even move to the next line " + "to format the look of your code")
+print()
+
+# We can convert other value types to string form, like numbers
+print("Here we convert an integer to a string: " + str(5))
+# If you try adding the number 5 to the string without converting, the Python interpreter will give an error 
+
+# Strings can be multiplied by whole numbers, which acts as a repeater 
+print("multiply! " + "strings" * 3)
 print()
 
 # Miscellaneous ways of outputting strings

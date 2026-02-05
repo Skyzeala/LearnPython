@@ -15,10 +15,15 @@ Run this command in a command prompt to ensure proper installation: python --ver
 [Never used a command prompt before? Jump here!](#command-prompt) \
 On some systems, you might need to use 'py' or 'python3' instead of 'python'. From now on in this tutorial, I will always use the 'python' command, remember to adjust if you need to use 'py' or 'python3' as your command.
 
+## Python Interpreter
+
 To run the Python interpreter, run this command in a command prompt: python \
 From there you can type and enter code to the interpreter and it will run it. \
 To exit the interpreter and return to your command line, enter this: exit() \
 Note that this will cause Python to forget all variables and functions you sent to it in that session.
+
+In the python interpreter, the last output is stored in the variable '_', 
+which you can use in your next statement.
 
 ## VSCode
 
@@ -129,13 +134,6 @@ Command> help \
 Get info on other commands. After help, type the command you want to know more about.
 
 If you want to run a command you ran previously, you can use the arrow keys to bring up past entries. These can then be edited before running them again if you wish.
-
-## Python Interpreter
-
-
-
-In the python interpreter, the last output is stored in the variable '_', 
-which you can use in your next statement.
 
 ## Opening, editing, and running the code
 
