@@ -1,10 +1,11 @@
 # Here are some things we can do with strings
 # We use a lot of print statements here to show the outputs, 
-# but the print statements are not the intended focus of this tutorial
+# but the print statements themselves are not the focus of this file
 
+# Strings are how we can store text in Python
+# Strings are things like single letters ("a"), words ("Hello"), and sentences too ("Hello world!")
 
-
-# Here we combine two strings, note that '"' and "'" both work to define a string.
+# Here we combine two strings, note that single quotes and double quotes both work to define a string.
 print('This is a string, and ' + "this is also a string.") #concatenate 2 strings using + operator
 print("Concatenation is implicit" " for string literals") #concatenate 2 strings implicitly
 print() #prints an empty line, helps to keep things formatted

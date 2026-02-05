@@ -44,7 +44,7 @@ Install git from the latest official download page https://git-scm.com/install/w
 Install the GitHub CLI from the latest official download page https://cli.github.com/ \
 Optionally, install tortoise git https://tortoisegit.org/download/ \
     Note that this tutorial does not cover tortoise git usage, but it may be more intuitive to use \
-Check it was installed correctly on a command line: git --version
+Check that git was installed correctly on a command line: git --version
 
 Create a GitHub account https://github.com/
 
@@ -77,6 +77,8 @@ Note that this will not work if you have made any changes to the code in the rep
 
 There are many other git commands, but the rest are outside the scope of this tutorial. \
 You can find some help here: https://git-scm.com/cheat-sheet
+
+Now you can start using the code within the modules of this tutorial. [Jump to how to open and run!](#opening-editing-and-running-the-code)
 
 ## Command Prompt
 
@@ -127,6 +129,13 @@ Command> help \
 Get info on other commands. After help, type the command you want to know more about.
 
 If you want to run a command you ran previously, you can use the arrow keys to bring up past entries. These can then be edited before running them again if you wish.
+
+## Python Interpreter
+
+
+
+In the python interpreter, the last output is stored in the variable '_', 
+which you can use in your next statement.
 
 ## Opening, editing, and running the code
 

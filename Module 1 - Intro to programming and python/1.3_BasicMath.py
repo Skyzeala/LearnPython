@@ -1,8 +1,6 @@
 # Python is good at math, note that it DOES use order of operations
 
 
-# In the python interpreter, the last output is stored in the variable '_', 
-# which you can use in your next statement.
 
 print("Here are some basic math operations")
 print(5+2) # addition

@@ -1,8 +1,12 @@
 # Welcome to Python!
 
-This tutorial was written with the goal of being accessible to people without coding experience. Each module has one main topic, and may be dependent on prior modules' learning. This tutorial was designed for a few friends of mine. Their goals and interests are in data science, visual tools, and games. The tutorials will start to lean into that after the basics have been established.
+This tutorial was written with the goal of being accessible to people without coding experience. A few friends of mine wanted to learn about coding, so I decided to put together this tutorial. Their goals and interests are in data science, visual tools, and games. The tutorials will start to lean into that after the basics have been established.
 
 If you need help getting started, check out the [tools_tutorial.md](tools_tutorial.md) file!
+
+# How to use this tutorial
+
+This tutorial is designed to be an easy quick reference for new coders. The script files are intentionally short to keep each concept concise and easy to navigate. Each module has one main topic, and may be dependent on prior modules' learning. Learners are encouraged to not just look at and run the code, but modify it and write new code.
 
 # Table of contents
 - Module 1 - Intro to Programming and Python
@@ -14,7 +18,5 @@ If you need help getting started, check out the [tools_tutorial.md](tools_tutori
 The rest are incomplete, but can still be browsed as more content is added regularly.
 
 # Resources
-https://docs.python.org/3/tutorial/index.html - A Python tutorial
-https://docs.python.org/3/reference/index.html - The Python language reference
-
-
+Another handy Python tutorial - https://docs.python.org/3/tutorial/index.html \
+The Python language reference - https://docs.python.org/3/reference/index.html

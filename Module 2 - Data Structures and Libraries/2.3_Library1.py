@@ -4,7 +4,7 @@
 
 #some libraries and includes to use
 #numpy
-#pandas
+#pandas + geopandas
 #matplotlib
 #pygame
 #json
