@@ -3,7 +3,7 @@
 
 #syntax and indentation?
 
-# Booleans are values that are either True or False, stored as 1 and 0 respectively 
+# Booleans are values that are either True or False, and can evaluate as 1 and 0 respectively 
 
 myBool = False
 myInt = 0

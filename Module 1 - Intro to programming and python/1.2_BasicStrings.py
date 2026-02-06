@@ -97,18 +97,15 @@ print(myString[2:]) #print the substring starting at index 2, and going to the e
 print(myString[0:-1]) #print everything but the last character of a string
 
 # Modification
-
-# get into garbage collection and some backend details
-
 # Strings in python are immutable, meaning they cannot be changed after creation
 # To get around this, a new string must be made
-myString = "thete is a typo in this statement"
+myString = "thete is a typo in this statement" #creates an instance of a string, and myString stores its value
 print(myString)
-myString = myString[:3] + 'r' + myString[4:]
+myString = myString[:3] + 'r' + myString[4:] #creates a new string, and then replaces the value of myString with it
 print(myString)
 # Writing something like 'myString[3] = r' would not work, as we cannot modify an existing string
 # What happens on the backend is a new string gets made, and replaces the string stored in the variable
-# Eventually, Pythons garbage collection system will come around and delete the old string from memory
+# Eventually Python's garbage collection system will come around and delete the old string from memory
 
 # Each string variable is unique, and changing one will not change another
 myString = "my string"
