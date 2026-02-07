@@ -15,6 +15,12 @@ print(myBool == 0)
 print(True == 1)
 
 
+# Code can be aggregated into what are called blocks
+# In Python, blocks are defined by indentation, which is typically a tab or 4 spaces
+# VSCode, and many other IDEs will automatically convert tabs to 4 spaces, to provide consistency
+# You can learn more about typical Python coding style here
+#     https://peps.python.org/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds
+
 #if elif else
 
 

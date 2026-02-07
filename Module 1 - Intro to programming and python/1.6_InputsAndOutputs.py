@@ -1,6 +1,6 @@
 #this module entry is incomplete
 
-
+#might add more complex string arguments here for interpreting from files and outputting to files
 
 
 print("The print function can take several arguments", 1, 1.5, 

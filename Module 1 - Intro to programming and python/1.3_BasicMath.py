@@ -46,7 +46,7 @@ print(x)
 print("We have used " + str(type(5)) + " typed values so far, but")
 print("We can also use " + str(type(5.1)) + " numbers " + str(5.1+2.1)) 
 # Floats, or floating point numbers can be specified by including a decimal point in the number
-# note the result, decimal values are always approximated due to computer hardware limitations
+# Note the result, decimal values are always approximated due to computer hardware limitations
 
 # Ints and floats can be intermixed, and will always give a result of the most precise one used
 print("For example, 5 + 5.0 = " + str(5+5.0))
@@ -57,7 +57,8 @@ print()
 
 
 # Python data types are dynamic, they are determined at runtime and not explicitly stated in the code
-
+# Other languages like C required the type of each variable to be specified upon variable creation
+# R works similarly to Python
 
 
 #two variables can be defined at once

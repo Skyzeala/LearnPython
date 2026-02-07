@@ -27,7 +27,7 @@ which you can use in your next statement.
 
 ## VSCode
 
-VSCode is an Integrated Development Library, or IDE. This is not required, but is extremely useful. Another option you could look into is Jupyter Notebooks, which has more of a focus on data science but will not be covered here.
+VSCode is an Integrated Development Library, or IDE. This is not required, but is extremely useful. Another few options you could look into are Anaconda and Jupyter, but they will not be covered here.
 
 You can download the VSCode installer from the official download page https://code.visualstudio.com/download
 
@@ -35,13 +35,7 @@ After installing it, we will want to get some extensions that make Python easier
 
 ![Screenshot of the Python extension in VSCode](Images/tools-vscode-python-ext.png)
 
-We will come back to this program once we have obtained the code. [Already have the code? Jump here!](#opening-editing-and-running-the-code) \
-
-To open code in a file or folder, use the File button at the top of the window. Then on the sidebar, select Explorer if it is not already selected.
-
-To run a Python script, use the Run & Debug button on the sidebar. If asked to choose how to run, select python debugger.
-
-To run a single line or single block of code use [shift + enter] while your cursor is on the line in question.
+We will come back to VSCode later once we have obtained the code. [Already have the code? Jump here!](#opening-editing-and-running-the-code) \
 
 ## Git
 
@@ -137,5 +131,10 @@ If you want to run a command you ran previously, you can use the arrow keys to b
 
 ## Opening, editing, and running the code
 
+To open code in a file or folder, use the File button at the top of the window. Then on the sidebar, select Explorer if it is not already selected.
+
+To run a Python script, use the Run & Debug button on the sidebar. If asked to choose how to run, select python debugger.
+
+To run a single line or single block of code use [shift + enter] while your cursor is on the line in question.
 
 
