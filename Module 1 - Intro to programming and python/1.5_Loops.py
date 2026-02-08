@@ -15,9 +15,9 @@ while a < 10:
     a += 1
 
 
-myList = [1,2,4,8,32]
+my_list = [1,2,4,8,32]
 
-for num in myList:
+for num in my_list:
     print(num)
 
 

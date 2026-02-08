@@ -5,13 +5,13 @@
 
 # Booleans are values that are either True or False, and can evaluate as 1 and 0 respectively 
 
-myBool = False
-myInt = 0
+my_bool = False
+my_int = 0
 
-print(myBool)
-print(str(type(myBool)))
+print(my_bool)
+print(str(type(my_bool)))
 
-print(myBool == 0)
+print(my_bool == 0)
 print(True == 1)
 
 
@@ -46,18 +46,5 @@ def http_error(status):
             return "Something's wrong with the internet"
         
 
-point = (0,7)
 
-
-match point:
-    case (0, 0):
-        print("Origin")
-    case (0, y):
-        print(f"Y={y}")
-    case (x, 0):
-        print(f"X={x}")
-    case (x, y):
-        print(f"X={x}, Y={y}")
-    case _:
-        raise ValueError("Not a point")
 

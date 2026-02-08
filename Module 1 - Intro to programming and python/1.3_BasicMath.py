@@ -70,4 +70,4 @@ print(str(var1) + " " + str(var2))
 
 #rand
 
-
+#points 

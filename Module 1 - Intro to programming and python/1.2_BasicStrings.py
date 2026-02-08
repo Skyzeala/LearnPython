@@ -17,6 +17,7 @@ print("Concatenation is implicit " "for string literals") #concatenate 2 strings
 #     rather than hardcoded as string literals
 print("you can concatenate " + "as many " + "strings " + "together " + "as you'd like"
       + ", and even move to the next line " + "to format the look of your code")
+# Splitting a single statement across multiple text lines is called a hanging indent
 # Line splits also work with implicit concatenation too
 print("When printing long sequences, "
       "we can spread our code across multiple lines "
@@ -64,57 +65,58 @@ This is useful for easy formatting of larger blocks of text
 print()
 
 # Instead of string literals, we can use variables to store strings 
-myString = "my string" # The variable myString is set to the string literal value "my string"
+my_string = "my string" # The variable myString is set to the string literal value "my string"
 # Note that the "=" here is not used to check for equivalence, it is assignment, myString variable is being set
-print(myString) # We can now use the variable to print our string
+print(my_string) # We can now use the variable to print our string
 # If the variable changes, the next uses of the variable will have the updated value
-myString = "my string updated"
-print(myString)
+my_string = "my string updated"
+print(my_string)
 # You can use existing variables to create new ones, this won't change the original myString
-newString = myString + " into a new string"
-print(newString)
+another_string = my_string + " into a new string"
+print(another_string)
 
 # In Python, strings are stored as a list of characters, and can be accessed one character at a time
 # Python uses zero indexing, which means the first character of a string is at index 0, 
 #     the second is at index 1, the third is at index 2, and so on
 # The last character of a string will be at the index number which is one less than the length of the string
-myString = "abcdef"
-print("The length of myString is " + str(len(myString))) 
-print(myString[0]) #prints the first character of a string
-print(myString[3]) #print the 4th character
-print(myString[-1]) #print the character at the last index 
-print(myString[-2]) #print the second last character
+my_string = "abcdef"
+print("The length of myString is " + str(len(my_string))) 
+print(my_string[0]) #prints the first character of a string
+print(my_string[3]) #print the 4th character
+print(my_string[-1]) #print the character at the last index 
+print(my_string[-2]) #print the second last character
 # Try changing the string and the index numbers to see how the outputs change
-print("Individual characters are still of type " + str(type(myString[0]))) 
+print("Individual characters are still of type " + str(type(my_string[0]))) 
 # Many other coding languages actually use 'char' as the type for individual characters
 print()
 
-# You can use partial strings with substring indexing, here are some examples
-myString = "abcdef"
-print(myString[0:3]) #prints a substring from the first char and up to but not including the 4th char
-print(myString[:3]) #you can actually leave out the initial 0, as the default is the start of the string
-print(myString[2:]) #print the substring starting at index 2, and going to the end of the string
-print(myString[0:-1]) #print everything but the last character of a string
+# You can get a partial string with substring indexing, also called slicing, here are some examples
+my_string = "abcdef"
+print(my_string[0:3]) #prints a substring from the first char and up to but not including the 4th char
+print(my_string[:3]) #you can actually leave out the initial 0, as the default is the start of the string
+print(my_string[2:]) #print the substring starting at index 2, and going to the end of the string
+print(my_string[0:-1]) #print everything but the last character of a string
+print(my_string[-1:]) #print the last character of a string
 
 # Modification
 # Strings in python are immutable, meaning they cannot be changed after creation
 # To get around this, a new string must be made
-myString = "thete is a typo in this statement" #creates an instance of a string, and myString stores its value
-print(myString)
-myString = myString[:3] + 'r' + myString[4:] #creates a new string, and then replaces the value of myString with it
-print(myString)
+my_string = "thete is a typo in this statement" #creates an instance of a string, and myString stores its value
+print(my_string)
+my_string = my_string[:3] + 'r' + my_string[4:] #creates a new string, and then replaces the value of myString with it
+print(my_string)
 # Writing something like 'myString[3] = r' would not work, as we cannot modify an existing string
 # What happens on the backend is a new string gets made, and replaces the string stored in the variable
 # Eventually Python's garbage collection system will come around and delete the old string from memory
 
 # Each string variable is unique, and changing one will not change another
-myString = "my string"
-myNewString = myString
+my_string = "my string"
+my_new_string = my_string
 
-print(myNewString)
-myString = "changed string"
-print(myNewString)
-print(myString)
+print(my_new_string)
+my_string = "changed string"
+print(my_new_string)
+print(my_string)
 
 
 
