@@ -1,9 +1,4 @@
-
-
-
-#syntax and indentation?
-
-# Booleans are values that are either True or False, and can evaluate as 1 and 0 respectively 
+# Booleans are values that are either True or False, and can evaluate as 1 and 0 respectively if desired
 
 my_bool = False
 my_int = 0

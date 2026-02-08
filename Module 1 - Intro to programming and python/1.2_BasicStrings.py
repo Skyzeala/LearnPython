@@ -26,11 +26,12 @@ print()
 
 # We can convert other value types to string form, like numbers
 print("Here we convert an integer to a string: " + str(5))
-# If you try adding the number 5 to the string without converting, the Python interpreter will give an error 
-# we can print data types like this, str stands for string, and int stands for integer
+# If we tried adding the number 5 to the string without converting, the Python interpreter will give an error 
+# We can print data types like this, str stands for string, and int stands for integer
 print("String type: " + str(type("my string")))
 print("String type: " + str(type(5)))
-# Try this with other data types as you discover them later in this tutorial
+# There are conversion functions for almost all data types in Python, 
+#     but not every type can be converted to every other, sometimes Python will give an error instead
 
 # Strings can be multiplied by whole numbers, which acts as a repeater 
 print("multiply!" * 3)
@@ -64,26 +65,35 @@ This is useful for easy formatting of larger blocks of text
       ''')
 print()
 
-# Instead of string literals, we can use variables to store strings 
-my_string = "my string" # The variable myString is set to the string literal value "my string"
-# Note that the "=" here is not used to check for equivalence, it is assignment, myString variable is being set
+# Instead of string literals, we can use variables to store strings, variables act as labelled containers for data
+my_string = "my string" # The variable my_string is set to the string literal value "my string"
+# Note that the "=" here is not used to check for equivalence, it is assignment, my_string variable is being set
 print(my_string) # We can now use the variable to print our string
 # If the variable changes, the next uses of the variable will have the updated value
 my_string = "my string updated"
 print(my_string)
-# You can use existing variables to create new ones, this won't change the original myString
+# You can use existing variables to create new ones, this won't change the original my_string
 another_string = my_string + " into a new string"
 print(another_string)
 
-# In Python, strings are stored as a list of characters, and can be accessed one character at a time
+# Python data types are dynamic, they are determined at runtime and not explicitly stated in the code
+# Other languages like C required the type of each variable to be specified upon variable creation
+# R works similarly to Python
+
+# Two variables can be defined at once with comma separation
+#     Generally you will want to separate each variable to its own line to increase code readability
+var1, var2 = "one", "two"
+print(var1 + " " + var2)
+
+# In Python, strings can be accessed one character at a time by index
 # Python uses zero indexing, which means the first character of a string is at index 0, 
 #     the second is at index 1, the third is at index 2, and so on
 # The last character of a string will be at the index number which is one less than the length of the string
 my_string = "abcdef"
-print("The length of myString is " + str(len(my_string))) 
+print("The length of my_string is " + str(len(my_string))) #the len function returns the length of a given string
 print(my_string[0]) #prints the first character of a string
 print(my_string[3]) #print the 4th character
-print(my_string[-1]) #print the character at the last index 
+print(my_string[-1]) #print the last character 
 print(my_string[-2]) #print the second last character
 # Try changing the string and the index numbers to see how the outputs change
 print("Individual characters are still of type " + str(type(my_string[0]))) 
@@ -97,15 +107,17 @@ print(my_string[:3]) #you can actually leave out the initial 0, as the default i
 print(my_string[2:]) #print the substring starting at index 2, and going to the end of the string
 print(my_string[0:-1]) #print everything but the last character of a string
 print(my_string[-1:]) #print the last character of a string
+# You can use a 3rd number after another colon to signify the step, or interval to slice with
+print(my_string[0::2]) #print every other letter starting with index 0
 
 # Modification
 # Strings in python are immutable, meaning they cannot be changed after creation
 # To get around this, a new string must be made
-my_string = "thete is a typo in this statement" #creates an instance of a string, and myString stores its value
+my_string = "thete is a typo in this statement" #creates an instance of a string, and my_string stores its value
 print(my_string)
-my_string = my_string[:3] + 'r' + my_string[4:] #creates a new string, and then replaces the value of myString with it
+my_string = my_string[:3] + 'r' + my_string[4:] #creates a new string, and then replaces the value of my_string with it
 print(my_string)
-# Writing something like 'myString[3] = r' would not work, as we cannot modify an existing string
+# Writing something like 'my_string[3] = "r"' would not work, as we cannot modify an existing string
 # What happens on the backend is a new string gets made, and replaces the string stored in the variable
 # Eventually Python's garbage collection system will come around and delete the old string from memory
 
@@ -117,6 +129,3 @@ print(my_new_string)
 my_string = "changed string"
 print(my_new_string)
 print(my_string)
-
-
-

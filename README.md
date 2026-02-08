@@ -15,12 +15,13 @@ If you need help getting started, check out the [tools_tutorial.md](tools_tutori
 - - 1.3_BasicMath.py - An introduction to numbers and math
 
 Incomplete sections
+- Module 1
 - - 1.4_BoolsAndConditionals.py - An introduction to bool types, if statements, and match statements
 - - 1.5_Loops.py - An introduction to for loops, while loops, and iterators
 - - 1.6_InputsAndOutputs.py - An introduction to printing, getting CLI input, and file I/O
 - - 1.7_FunctionsAndMain.py - An introduction to functions, function arguments, and return values
-
-The rest are incomplete, but can still be browsed as more content is added regularly.
+- Module 2 
+- - all
 
 # Resources
 Another handy Python tutorial - https://docs.python.org/3/tutorial/index.html \
