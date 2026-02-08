@@ -2,7 +2,7 @@
 # We use a lot of print statements here to show the outputs, 
 #     but the print statements themselves are not the focus of this file
 
-# Strings are how we can store text in Python
+# Strings are how we can store and use text in Python
 # Strings are things like single letters ("a"), words ("Hello"), and sentences too ("Hello, World!")
 
 # Strings can be defined using single quotes or double quotes, these are then called string literals
@@ -64,6 +64,10 @@ you can escape it, causing the code's newline to be ignored but
 This is useful for easy formatting of larger blocks of text
       ''')
 print()
+
+
+
+# Variables
 
 # Instead of string literals, we can use variables to store strings, variables act as labelled containers for data
 my_string = "my string" # The variable my_string is set to the string literal value "my string"
