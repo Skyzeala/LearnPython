@@ -4,7 +4,7 @@
 
 
 print("The print function can take several arguments", 1, 1.5, 
-      "and combine them without the need for manual conversion")
+      "and combine them without the need for conversion")
 
 
 # Print with custom line endings

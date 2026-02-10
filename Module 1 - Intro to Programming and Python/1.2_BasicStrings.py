@@ -24,9 +24,9 @@ print("When printing long sequences, "
       "while keeping the output string in tact") 
 print()
 
-# We can convert other value types to string form, like numbers
+# We can convert other value types to string form, like numbers, this is called casting, or type casting
 print("Here we convert an integer to a string: " + str(5))
-# If we tried adding the number 5 to the string without converting, the Python interpreter will give an error 
+# If we tried adding the number 5 to the string without casting, the Python interpreter will give an error 
 # We can print data types like this, str stands for string, and int stands for integer
 print("String type: " + str(type("my string")))
 print("String type: " + str(type(5)))
@@ -80,21 +80,32 @@ print(my_string)
 another_string = my_string + " into a new string"
 print(another_string)
 
+# Variable names are case sensitive, cannot start with a number, and cannot contain whitespace characters
+# Variable names can contain numbers, letters, and underscores
+# There are also a few keywords that cannot be used as variable names
+#     You can find a list of keywords here https://www.w3schools.com/python/python_ref_keywords.asp
+# The common Pythonic way of using multi word variables is called snake case, where each word is separated by _
+
 # Python data types are dynamic, they are determined at runtime and not explicitly stated in the code
 # Other languages like C required the type of each variable to be specified upon variable creation
 # R works similarly to Python
 
-# Two variables can be defined at once with comma separation
-#     Generally you will want to separate each variable to its own line to increase code readability
-var1, var2 = "one", "two"
-print(var1 + " " + var2)
+# Multiple variables can be assigned to the same value in a single statement like this
+var1 = var2 = var3 = "var"
+print(var1 + " " + var2 + " " + var3)
+
+# Multiple variables can be defined with multiple values at once with comma separation
+var1, var2, var3 = "one", "two", "three"
+print(var1 + " " + var2 + " " + var3)
+
+
 
 # In Python, strings can be accessed one character at a time by index
 # Python uses zero indexing, which means the first character of a string is at index 0, 
 #     the second is at index 1, the third is at index 2, and so on
 # The last character of a string will be at the index number which is one less than the length of the string
 my_string = "abcdef"
-print("The length of my_string is " + str(len(my_string))) #the len function returns the length of a given string
+print("The length of my_string is " + str(len(my_string))) #the len function returns the length of my_string
 print(my_string[0]) #prints the first character of a string
 print(my_string[3]) #print the 4th character
 print(my_string[-1]) #print the last character 
