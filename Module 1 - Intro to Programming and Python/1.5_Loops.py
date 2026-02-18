@@ -2,9 +2,6 @@
 
 
 
-
-
-
 # it is important to always have an exit condition in a loop, otherwise your program may loop infinitely
 
 
@@ -14,12 +11,10 @@ while a < 10:
     print(a)
     a += 1
 
-
 my_list = [1,2,4,8,32]
 
 for num in my_list:
     print(num)
-
 
 for i in range(5):
     print(i)

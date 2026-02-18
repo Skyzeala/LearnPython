@@ -26,6 +26,7 @@ Incomplete sections
 # Resources
 Another handy Python tutorial - https://docs.python.org/3/tutorial/index.html \
 Yet another handy Python tutorial - https://www.learnpython.org/ \
+A Python tutorial with a focus on automation - https://automatetheboringstuff.com \
 Here's one more handy Python tutorial - https://www.w3schools.com/python/python_intro.asp \
 The Python language reference - https://docs.python.org/3/reference/index.html \
 Python style guide - https://peps.python.org/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds

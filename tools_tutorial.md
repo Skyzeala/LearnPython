@@ -22,8 +22,8 @@ From there you can type and enter code to the interpreter and it will run it. \
 To exit the interpreter and return to your command line, enter this: exit() \
 Note that this will cause Python to forget all variables and functions you sent to it in that session.
 
-In the python interpreter, the last output is stored in the variable '_', 
-which you can use in your next statement.
+In the python interpreter, the last output is stored in the variable '_', which you can use in your next statement.
+All Python code written in scripts can be sent to an interpreter to have the same result as what a script gives.
 
 ## VSCode
 
@@ -81,11 +81,11 @@ Now you can start using the code within the modules of this tutorial. [Jump to h
 
 ## Command Prompt
 
-Command prompts offer direct access with the operating system and other programs via a text based interface. Many pograms are written for exclusive use on a command line, including python scripts, so it is useful to become comfortable with them. A command prompt on windows can be opened by searching "cmd" or "command prompt" in the search on a windows taskbar. Alternatively, a command prompt can also be opened with windows explorer by typing "cmd" in the path. As a side note, the command prompt we're using is not the same as powershell, we will not be covering powershell use in this tutorial.
+Command prompts (also called terminals or consoles) offer direct access with the operating system and other programs via a text based interface. Many pograms are written for exclusive use on a command line, including python scripts, so it is useful to become comfortable with them. A command prompt on windows can be opened by searching "cmd" or "command prompt" in the search on a windows taskbar. Alternatively, a command prompt can also be opened with windows explorer by typing "cmd" in the path. The command prompt we're using is not the same as powershell, we will not be covering powershell in this tutorial.
 
 ![Opening a command prompt from Windows Explorer](Images/tools-cmd-from-windows-explorer.png)
 
-Command prompts are localized to a directory (folder), and have direct access to the items within the directory. The default location is C:\Windows\System32, but you will typically want to work in the same directory as your code instead. The prompt part of the command prompt window typically shows what the working directory is. After the prompt is where you can type out commands, I've listed a few useful ones below with some examples of what they do.
+Command prompts are localized to a directory (folder), and have easy access to the items within the directory. The default location is C:\Windows\System32, but you will typically want to work in the same directory as your code instead. The prompt part of the command prompt window typically shows what the working directory is. After the prompt is where you can type out commands, I've listed a few useful ones below with some examples of what they do, try them out!
 
 ![Image of a command prompt window](Images/tools-cmd.png)
 
@@ -102,10 +102,10 @@ Result: Your command prompt will now be working in the parent directory of its p
 
 Command> mkdir \
 Make a new directory. After mkdir, type a name for your new directory.
-Example> mkdir newFolder
-Result: a new folder is made in the current directory called "newFolder"
+Example> mkdir new_folder
+Result: a new folder is made in the current directory called "new_folder"
 Example> mkdir "New Folder"
-Result: a new folder is made in the current directory called "New Folder". Note the use of quotes in the command, this is how to include a space in the folder name.
+Result: a new folder is made in the current directory called "New Folder". Note the use of quotes in the command, this is how to create or access files and folders with spaces in the name.
 
 Command> type \
 Display file as text. After type, type a filename for the file you want to print to the console. \
@@ -119,21 +119,25 @@ Result: Notepad would open with a new empty text file called new_text_file.txt s
 
 Command> cls \
 Command> [ctrl + shift + k] \
-Clear screen. Clears the screen and starts a new prompt (>). You cannot retrieve any past input or output so use this carefully.
+Clear screen. Clears the screen and starts a new prompt (>). You cannot retrieve any past output so use this carefully.
 
 Command> [ctrl + c] \ 
-Kills any active program in the prompt, including the prompt itself. Be careful when copying with keyboard shortcuts. The Python interpreter has a 'handler' for this, and will not close completely, but any script that was running would be forced to quit.
+Kills any active program in the prompt, including the prompt itself. Be careful when copying text with keyboard shortcuts. The Python interpreter has a 'handler' for this, and will not close completely, but any script that was running would be forced to quit.
 
 Command> help \
 Get info on other commands. After help, type the command you want to know more about.
 
-If you want to run a command you ran previously, you can use the arrow keys to bring up past entries. These can then be edited before running them again if you wish.
+If you want to run a command you ran previously, you can use the arrow keys to bring up past entries. These can then be edited before running them again.
 
 ## Opening, editing, and running the code
 
 To open code in a file or folder, use the File button at the top of the window. Then on the sidebar, select Explorer if it is not already selected.
 
-To run a Python script, use the Run & Debug button on the sidebar. If asked to choose how to run, select python debugger.
+To run a Python script, use the Run & Debug button on the sidebar. If asked to choose how to run, select python debugger and python file. The output of the script will appear in the terminal at the bottom of the screen after initialization.
+
+![Image of the VSCode terminal location](Images/tools-vscode-terminal.png)
+
+You can also run a single line of code in a script by clicking the line you want to run and hitting shift + enter. This starts a Python instance in the terminal, which functions the same as opening the Python interpreter in a command prompt. Subsequent code run with shift + enter will run on the same instance of Python in the terminal. To run multiple lines of code, select all of the code you wish to run and then hit shift + enter. 
 
 To run a single line or single block of code use [shift + enter] while your cursor is on the line in question.
 
